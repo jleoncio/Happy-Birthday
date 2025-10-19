@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 ¡Happy Birthday!</title>
+<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<div class="card">
+    <img src="https://i26.servimg.com/u/f26/20/62/62/11/whatsa10.jpg" alt="Foto de recuerdo">
+    <h1>¡Happy Birthday, <span id="nombre">Ayra</span>! 🎈</h1>
+    <p class="mensaje">Have a beautiful day satineeeeee , you know I really appreciate this friendship :3  💖</p>
+</div>
+
+
+<div class="balloon" style="left: 10%; background: #f9ca24; animation-delay: 0s;"></div>
+<div class="balloon" style="left: 30%; background: #e056fd; animation-delay: 1s;"></div>
+<div class="balloon" style="left: 50%; background: #22a6b3; animation-delay: 2s;"></div>
+<div class="balloon" style="left: 70%; background: #ff7979; animation-delay: 3s;"></div>
+<div class="balloon" style="left: 90%; background: #badc58; animation-delay: 4s;"></div>
+
+<script>
+    for (let i = 0; i < 30; i++) {
+    const conf = document.createElement('div');
+    conf.className = 'confetti';
+    conf.style.left = Math.random() * 100 + '%';
+    conf.style.background = ['#ff4757', '#ffa502', '#1e90ff', '#2ed573', '#ff6b81'][Math.floor(Math.random()*5)];
+    conf.style.animationDelay = Math.random() * 5 + 's';
+    document.body.appendChild(conf);
+    }
+</script>
+</body>
+</html>
